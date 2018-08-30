@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: cc
+server:
+  port: 8401
+
