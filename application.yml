@@ -1,0 +1,12 @@
+server:
+  port: 8001
+
+spring:
+  application:
+    name: ec
+
+eureka:
+  client:
+    serviceUrl:
+#    注明自己的服务注册中心的地址
+      defaultZone: http://localhost:8000/eureka/
