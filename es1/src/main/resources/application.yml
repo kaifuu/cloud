@@ -1,0 +1,8 @@
+eureka:
+  instance:
+    hostname: es1
+  client:
+    serviceUrl:
+      defaultZone: http://es2:8802/eureka/
+server:
+  port: 8801
