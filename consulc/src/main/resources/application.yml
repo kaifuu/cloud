@@ -1,0 +1,15 @@
+server:
+    port: 8503
+application:
+    name: consul-client
+spring:
+    cloud:
+        consul:
+            discovery:
+                enabled: true
+                healthCheckInterval: 5s
+                healthCheckUrl: /actuator/health
+                hostname: localhost
+                instance-id: consul-client
+            host: localhost
+            port: 8500

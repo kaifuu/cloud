@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: consul-server
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+        enabled: true
+        instance-id: consul-server-2
+        healthCheckPath: /actuator/health
+        healthCheckInterval: 5s
+server:
+  port: 8502
